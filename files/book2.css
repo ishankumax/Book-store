@@ -1,0 +1,41 @@
+body {
+	margin: 0;
+	border: solid red 1px;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #662549;
+}
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	margin: 8px;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	border: 10px #662549;
+	border-radius: 10px;
+	margin: 6px;
+	background-color: #f39f5a;
+	color: black;
+	padding: 15px;
+}
+
+.topnav-center {
+	text-align: center;
+}
+
+.topnav-right {
+	float: right;
+}
+.main {
+	padding: 16px;
+	margin-top: 30px;
+	height: 1500px;
+}
