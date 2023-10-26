@@ -25,6 +25,17 @@ body {
 	border-radius: 5px;
 }
 
+#navbar a :right {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 7px;
+	text-decoration: none;
+	position: static;
+	font-size: 15px;
+	line-height: 25px;
+	border-radius: 4px;
+}
 #navbar a {
 	float: left;
 	color: black;
@@ -44,11 +55,11 @@ body {
 	top: 4px;
 }
 
-#navbar a:hover {
+#navbar a :right :hover {
 	left: 5px;
 	padding: 5px;
 	background-color: #2c2c2c;
-	color: rgb(255, 255, 255);
+	color:aqua;
 }
 
 #navbar a.active {
