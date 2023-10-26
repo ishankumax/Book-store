@@ -13,6 +13,8 @@ body
 	align-items: center;
 	min-height: 100vh;
 	background: #000;
+	width: 100%;
+	height: 100%;
 }
 section 
 {
@@ -51,6 +53,8 @@ section span
 	position: relative;
 	display: block;
 	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
 	width: calc(50px);
 	height: calc(50px);
 	background: #181818;
