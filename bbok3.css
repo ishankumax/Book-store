@@ -50,7 +50,8 @@ body {
 	color: white;
 }
 #btn2 {
-font-size: lar;}
+	font-size: lar;
+}
 
 #btn {
 	border: none;
@@ -66,7 +67,17 @@ font-size: lar;}
 	background-color: #666;
 	color: white;
 }
-
+section {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
 @media screen and (max-width: 580px) {
 	#navbar {
 		padding: 20px 10px !important;
