@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Book store</title>
+		<link rel="stylesheet" href="book2.css" />
+	</head>
+	<body style="height: 1500px;">
+		<div class="header" id="header">
+			<div class="header-content">
+				This is the header content
+				<!-- You can add any content for your header here -->
+			</div>
+		</div>
+
+		<div class="navbar" id="navbar">
+			<div class="navbar-content">
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li>
+							<a href="#">Services</a>
+							<ul>
+								<li><a href="#">Service 1</a></li>
+								<li><a href="#">Service 2</a></li>
+								<li><a href="#">Service 3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Products</a>
+							<ul>
+								<li><a href="#">Product 1</a></li>
+								<li><a href="#">Product 2</a></li>
+								<li><a href="#">Product 3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+			<!-- Content to simulate scrolling -->
+			<p>Scroll down to see the header hiding.</p>
+		
+
+		<script>
+			let prevScrollpos = window.pageYOffset;
+			window.onscroll = function () {
+				let currentScrollPos = window.pageYOffset;
+				let header = document.getElementById("header");
+				let navbar = document.getElementById("navbar");
+				if (prevScrollpos > currentScrollPos) {
+					header.style.top = "0";
+					navbar.style.top = "150px";
+				} else {
+					header.style.top = "-150px";
+					navbar.style.top = "0";
+				}
+				prevScrollpos = currentScrollPos;
+			};
+		</script>
+	</body>
+</html>
