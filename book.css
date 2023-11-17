@@ -1,6 +1,6 @@
-/* * {
+* {
 	border: 1px red solid;
-} */
+}
 body {
 	margin: 0;
 	font-family: Arial, sans-serif;
@@ -78,7 +78,36 @@ nav ul ul li {
 }
 nav ul ul li a {
 	padding: 10px 15px;
+	 border-radius:7px ;
+	background-color: beige;
+	margin: 10px;
 }
+.row > .column {
+	padding: 0 4px;
+  }
+  
+  
+  
+  .column {
+	float: left;
+	width: 25%;
+	width: 70px;
+	position: relative;
+	margin: 50px;
+  }
+  img{
+	width: 70px;
+  }
+  img.hover-shadow {
+	transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+
 .container {
 	max-width: 1400px;
 	padding: 0 15px;
@@ -133,10 +162,10 @@ nav ul ul li a {
   }
   
   .card .card-link {
-	display: inline-block;
+	display: inline-block=;
 	text-decoration: none;
-	color: rgb(0, 0, 0);
-	background: blue;
+	color: rgb(255, 255, 255);
+	background: rgb(0, 0, 0);
 	padding: 6px 12px;
 	border-radius: 8px;
 	transition: background 0.2s;
