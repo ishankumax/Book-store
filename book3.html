@@ -2,80 +2,88 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="bbok3.css" />
+		<title>book store 3</title>
+		<link rel="stylesheet" href="book3.css" />
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 	</head>
-	<body 	background-image:url ( "https://r.search.yahoo.com/_ylt=Awr1TaX4kjtldigJm269HAx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzkxNzIxM2ZkMDRlZWFjNTQ1OGY5NjM3YzYxNTM3OTFhBGdwb3MDNQRpdANiaW5n/RV=2/RE=1698431864/RO=11/RU=https%3a%2f%2fwallpaperaccess.com%2fcss/RK=2/RS=6ufPkhL4jdC0PFfBHX_2F4a.VEw-")>
+	<body background-image:url (
+	"https://r.search.yahoo.com/_ylt=Awr1TaX4kjtldigJm269HAx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzkxNzIxM2ZkMDRlZWFjNTQ1OGY5NjM3YzYxNTM3OTFhBGdwb3MDNQRpdANiaW5n/RV=2/RE=1698431864/RO=11/RU=https%3a%2f%2fwallpaperaccess.com%2fcss/RK=2/RS=6ufPkhL4jdC0PFfBHX_2F4a.VEw-")>
 	>
-		<div id="navbar">
-			<a href="#default" id="logo">CompanyLogo</a>
-			<a href="#default" id="btn2"
-				><span class="material-symbols-outlined"> pin_drop </span
-				>140401<br />Rajpura</a
+	<div id="navbar">
+		<a href="#default" id="logo">CompanyLogo<img src="C:\Chitkara\BOOK2\Bookflix.png" width="60px"></a>
+		<span class="material-symbols-outlined"> pin_drop </span
+			>140401<br />Rajpura</a
+		>
+
+		<div class="navbar">
+			<a href="#home">Home</a>
+			<a href="#news">News</a>
+			<div class="dropdown">
+			  <button class="dropbtn">Dropdown 
+				<i class="fa fa-caret-down"></i>
+			  </button>
+			  <div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			  </div>
+			</div> 
+		  </div>
+	</div>
+
+	<div style="margin-top: 210px; padding: 15px 15px 2500px; font-size: 30px">
+		<p>
+			<b
+				>This example demonstrates how to shrink a navigation bar when the user
+				starts to scroll the page.</b
 			>
-			
-			<div id="btn">
-				<a href="book3.html" class="btn active">Home</a>
-				<a href="index (2).html" class="btn ">Login</a>
-				<a class="btn ">Account</a>
-				<a class="btn">Contact</a>
-				<a class="btn">About</a>
-			</div>
-		</div>
+		</p>
+		<p>Scroll down this frame to see the effect!</p>
+		<p>Scroll to the top to remove the effect.</p>
+		<p>
+			<b>Note:</b> We have also made the navbar responsive, resize the browser
+			window to see the effect.
+		</p>
+		<p>
+			Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur
+			adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+			reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+			qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
 
-		<div style="margin-top: 210px; padding: 15px 15px 2500px; font-size: 30px">
-			<p>
-				<b
-					>This example demonstrates how to shrink a navigation bar when the
-					user starts to scroll the page.</b
-				>
-			</p>
-			<p>Scroll down this frame to see the effect!</p>
-			<p>Scroll to the top to remove the effect.</p>
-			<p>
-				<b>Note:</b> We have also made the navbar responsive, resize the browser
-				window to see the effect.
-			</p>
-			<p>
-				Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur
-				adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-				in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-				qui officia deserunt mollit anim id est laborum.
-			</p>
-		</div>
+	<script>
+		// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+		window.onscroll = function () {
+			scrollFunction();
+		};
 
-		<script>
-			// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-			window.onscroll = function () {
-				scrollFunction();
-			};
-
-			function scrollFunction() {
-				if (
-					document.body.scrollTop > 80 ||
-					document.documentElement.scrollTop > 80
-				) {
-					document.getElementById("navbar").style.padding = "30px 10px";
-					document.getElementById("logo").style.fontSize = "25px";
-				} else {
-					document.getElementById("navbar").style.padding = "80px 10px";
-					document.getElementById("logo").style.fontSize = "35px";
-				}
+		function scrollFunction() {
+			if (
+				document.body.scrollTop > 80 ||
+				document.documentElement.scrollTop > 80
+			) {
+				document.getElementById("navbar").style.padding = "30px 10px";
+				document.getElementById("logo").style.fontSize = "25px";
+			} else {
+				document.getElementById("navbar").style.padding = "80px 10px";
+				document.getElementById("logo").style.fontSize = "35px";
 			}
-			var header = document.getElementById("btn");
-			var btns = header.getElementsByClassName("btn");
-			for (var i = 0; i < btns.length; i++) {
-				btns[i].addEventListener("click", function () {
-					var current = document.getElementsByClassName("active");
-					current[0].className = current[0].className.replace(" active", "");
-					this.className += " active";
-				});
-			}
-		</script>
+		}
+		var header = document.getElementById("btn");
+		var btns = header.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function () {
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+			});
+		}
+	</script>
 	</body>
 </html>
