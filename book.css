@@ -1,6 +1,6 @@
-* {
+/* * {
 	border: 1px red solid;
-}
+} */
 body {
 	margin: 0;
 	font-family: Arial, sans-serif;
@@ -82,30 +82,28 @@ nav ul ul li a {
 	background-color: beige;
 	margin: 10px;
 }
-.row > .column {
-	padding: 0 4px;
-  }
-  
-  
-  
-  .column {
-	float: left;
-	width: 25%;
-	width: 70px;
-	position: relative;
-	margin: 50px;
-  }
-  img{
-	width: 70px;
-  }
-  img.hover-shadow {
-	transition: 0.3s;
-  }
-  
-  .hover-shadow:hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+.image {
+	width: 1350px;
+	height: 80px;
+	padding: 10px;
+	margin-left: 80px;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: space-around;
+	color: #451952;
+	text-align: center;
+}
 
+.image a {
+	text-decoration: none;
+	color: black;
+	transition: transform 0.2s ease-in-out;
+	border-radius: 7px;
+}
+
+.image a:hover {
+	transform: scale(1.1);
+}
 
 
 .container {
@@ -121,7 +119,7 @@ nav ul ul li a {
   
   .cards {
 	display: flex;
-	padding: 25px 0px;
+	padding: 25px 20px;
 	list-style: none;
 	overflow-x: scroll;
 	scroll-snap-type: x mandatory;
@@ -131,12 +129,13 @@ nav ul ul li a {
 	display: flex;
 	flex-direction: column;
 	flex: 0 0 100%;
-	padding: 20px;
+	padding: 19px;
 	background: var(--white);
 	border-radius: 12px;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
 	scroll-snap-align: start;
-	transition: all 0.2s;
+	transition: all 0.2s ease-in-out;
+
   }
   
   .card:not(:last-child) {
@@ -146,6 +145,8 @@ nav ul ul li a {
   .card:hover {
 	color: white;
 	background:black;
+	transform: scale(1.1);
+
   }
   
   .card .card-title {
@@ -162,7 +163,7 @@ nav ul ul li a {
   }
   
   .card .card-link {
-	display: inline-block=;
+	display: inline-block;
 	text-decoration: none;
 	color: rgb(255, 255, 255);
 	background: rgb(0, 0, 0);

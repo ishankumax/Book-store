@@ -40,13 +40,61 @@
 				</nav>
 			</div>
 		</div>
+		<div class="image">
+			<a href=""
+				><img
+					src="https://www.imgbly.com/ib/AaOtgVvtnF.png"
+					alt="HTML tutorial"
+					style="width: 70px; height: 70px" /><br />Box Sets</a
+			>
+			<a href=""
+				><img
+					src="https://www.imgbly.com/ib/t2FLdBHuib.png"
+					alt="HTML tutorial"
+					style="width: 70px; height: 70px" /><br />Fiction Book</a
+			>
+			<a href=""
+				><img
+					src="https://www.imgbly.com/ib/QDAA1r7wtP.png"
+					alt="HTML tutorial"
+					style="width: 70px; height: 70px" /><br />Internal Seller</a
+			>
+			<a href=""
+				><img
+					src="https://www.imgbly.com/ib/ACHSjdcGuY.png"
+					alt="HTML tutorial"
+					style="width: 70px; height: 70px" /><br />Award Wining</a
+			>
+			<a href=""
+				><img
+					src="https://www.imgbly.com/ib/A9IS3xySw8.png"
+					alt="HTML tutorial"
+					style="width: 70px; height: 70px" /><br />Tarot Cards</a
+			>
+			<a href=""
+				><img
+					src="https://www.imgbly.com/ib/nsYsN1Ur8k.png"
+					alt="HTML tutorial"
+					style="width: 70px; height: 70px" /><br />Today's Deal</a
+			>
+			<a href=""
+				><img
+					src="https://www.imgbly.com/ib/AaOtgVvtnF.png"
+					alt="HTML tutorial"
+					style="width: 70px; height: 70px" /><br />Bool Set</a
+			>
+			<a href=""
+				><img
+					src="https://www.imgbly.com/ib/WKONAymArN.png"
+					alt="HTML tutorial"
+					style="width: 70px; height: 70px" /><br />New Arrivals</a
+			>
+		</div>
 
 		<!-- Content to simulate scrolling -->
 		<p>Scroll down to see the header hiding.</p>
-		
 
 		<div class="container">
-			
 			<h2></h2>
 			<ul class="cards">
 				<li class="card">
@@ -205,6 +253,13 @@
 						}
 						prevScrollpos = currentScrollPos;
 					};
+					function myFunction(imgs) {
+						var expandImg = document.getElementById("expandedImg");
+						var imgText = document.getElementById("imgtext");
+						expandImg.src = imgs.src;
+						imgText.innerHTML = imgs.alt;
+						expandImg.parentElement.style.display = "block";
+					}
 				</script>
 			</div>
 		</div>
