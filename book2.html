@@ -1,43 +1,85 @@
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>BookFlix 2</title>
-		<!-- <link
-			rel="icon"
-			type="image/x-icon"
-			href="https://i.pinimg.com/originals/64/36/49/643649926ee8f3d0253d2df20ca6d96e.png" /> -->
-		<link rel="stylesheet" href="book2.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #image-container {
+      display: flex;
+      overflow-x: hidden;
+      position: relative;
+    }
 
-	</head>
-	<body style="height: 1500px;">
-		<div class="topnav">
-			<a href="#home">Home</a>
-			<a href="#news">News</a>
-			<a href="#contact">Contact</a>
-			<form action="https://www.google.com/search" method="get">
-				<div class="topnav-right">
-					<a href="#my accounth">My Account</a>
-					<a href="#about">About</a>
-				</div>
-				<br />
-				<div class="topnav-center">
-					<input type="text" name="q" placeholder="Search Books..." />
-					<input type="submit" value="Go" />
-					<form action="https://www.google.com/search" method="get"></form>
-				</div>
-			</form>
-		</div>
+    .scroll-button {
+      cursor: pointer;
+      font-size: 24px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+    }
 
-		<div class="main">
-			<h1>Fixed Top Menu</h1>
-			<h2>Scroll this page to see the effect</h2>
-			<h2>
-				The navigation bar will stay at the top of the page while scrolling
-			</h2>
+    .scroll-button-left {
+      left: 0;
+    }
 
-			<p>Some text some text some text some text..</p>
-			<p>Some text some text some text some text..</p>
-			<p>Some text some text some text some text..</p>
-		</div>
-	</body>
+    .scroll-button-right {
+      right: 0;
+    }
+  </style>
+  <script>
+    function scrollImages(direction) {
+      const container = document.getElementById('image-container');
+      const containerWidth = container.clientWidth;
+      container.scrollLeft += direction === 'left' ? -containerWidth : containerWidth;
+    }
+  </script>
+</head>
+<body>
+
+<div id="image-container">
+  <!-- Add your images here -->
+  <img
+  src="https://www.bookswagon.com/bannerimages/79_inr.jpg?v=1.9"
+  alt="Cinque Terre"
+  width="100%"
+  height="100%" />
+<img
+  src="https://www.bookswagon.com/bannerimages/80_inr.jpg?v=1.8"
+  alt="Forest"
+  width="100%"
+  height="100%" />
+<img
+  src="https://www.bookswagon.com/bannerimages/81_inr.jpg?v=2.7"
+  alt="Northern Lights"
+  width="100%"
+  height="100%" />
+<img
+  src="https://www.bookswagon.com/bannerimages/83_inr.jpg?v=1.9"
+  alt="Mountains"
+  width="1450"
+  height="400" />
+<img
+  src="https://www.bookswagon.com/bannerimages/84_inr.jpg?v=2.7"
+  alt="Forest"
+  width="1450"
+  height="400" />
+<img
+  src="https://www.bookswagon.com/bannerimages/85_inr.jpg"
+  alt="Northern Lights"
+  width="1450"
+  height="400" />
+<img
+  src="https://www.bookswagon.com/bannerimages/86_inr.jpg?v=2.5"
+  alt="Mountains"
+  width="1450"
+  height="400" />
+  <!-- Add more images as needed -->
+</div>
+
+<button class="scroll-button scroll-button-left" onclick="scrollImages('left')">←</button>
+<button class="scroll-button scroll-button-right" onclick="scrollImages('right')">→</button>
+
+</body>
 </html>
