@@ -1,0 +1,146 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="cart.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+      <title>Book store Cart</title>
+      <link
+        rel="icon"
+        type="image/x-icon"
+        href="https://www.imgbly.com/ib/toTY2LN1jV.jpg"
+        style="border-radius: 50%" />	</head>
+	<body style="height: 1500px">
+		<div class="header" id="header">
+			<div class="header-content">
+				<div class="content">
+					<img
+						src="https://www.imgbly.com/ib/toTY2LN1jV.jpg"
+						height="100px"
+						width="100px"
+						style="vertical-align: middle; border-radius: 15%" />
+					<div class="content__container">
+						<p class="content__container__text">Book Store</p>
+
+						<ul class="content__container__list">
+							<li class="content__container__list__item">
+								Cart
+							</li>
+							<li class="content__container__list__item">
+								Cart
+							</li>
+							<li class="content__container__list__item">
+								Cart
+							</li>
+							<li class="content__container__list__item">
+                      Cart
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="share-buttons">
+					<a
+						href="https://www.facebook.com/profile.php?id=61551090667008&mibextid=ZbWKwL"
+						class="facebook"
+						><img
+							src="https://img.icons8.com/plasticine/100/facebook-new.png"
+							alt="Facebook"
+					/></a>
+					<a href="" class="youtube"
+						><img
+							src="https://img.icons8.com/plasticine/100/youtube-play--v1.png"
+							alt="youtube-play--v2"
+							alt="youtube"
+					/></a>
+					<a href="https://x.com/ishan_kumar10?s=08" class="twitter"
+						><img
+							src="https://img.icons8.com/plasticine/100/twitter.png"
+							alt="Twitter"
+					/></a>
+					<a
+						href="https://instagram.com/ishan.kumarofficial?igshid=OGQ5ZDc2ODk2ZA=="
+						class="insta"
+						><img
+							src="https://img.icons8.com/plasticine/100/instagram-new--v1.png"
+							alt="instagram-new--v1"
+							alt="insta"
+					/></a>
+					<a
+						href="https://www.linkedin.com/in/ishan-kumar-0b34b5279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+						class="linkin"
+						><img
+							src="https://img.icons8.com/plasticine/100/linkedin.png"
+							alt="LinkedIn"
+					/></a>
+					<a href="https://pin.it/2Y3Sodh" class="pins"
+						><img
+							src="https://img.icons8.com/plasticine/100/pinterest--v1.png"
+							alt="pins"
+					/></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="navbar" id="navbar">
+			<div class="navbar-content">
+				<nav>
+					<ul>
+						<li>
+							<a href="#"
+								><span class="material-symbols-outlined"> home </span>Home</a
+							>
+						</li>
+						<li>
+							<a href="#"
+								><span class="material-symbols-outlined"> build </span
+								>Services</a
+							>
+							<ul>
+								<li><a href="#">Cards</a></li>
+								<li><a href="#">Blogs</a></li>
+								<li><a href="#">Article</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="#"
+								><span class="material-symbols-outlined"> person </span>Login</a
+							>
+						</li>
+						<li>
+							<a href="car.html"
+								><span class="material-symbols-outlined"> shopping_cart </span
+								>Cart</a
+							>
+						</li>
+						<li>
+							<a href="#"
+								><span class="material-symbols-outlined"> call </span>Contact</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<br />
+		<script>
+			let prevScrollpos = window.pageYOffset;
+			window.onscroll = function () {
+				let currentScrollPos = window.pageYOffset;
+				let header = document.getElementById("header");
+				let navbar = document.getElementById("navbar");
+				if (prevScrollpos > currentScrollPos) {
+					header.style.top = "0";
+					navbar.style.top = "150px";
+				} else {
+					header.style.top = "-150px";
+					navbar.style.top = "0";
+				}
+				prevScrollpos = currentScrollPos;
+			};
+		</script>
+	</body>
+</html>

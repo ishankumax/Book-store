@@ -37,7 +37,6 @@ body {
 		"Lucida Sans", Arial, sans-serif;
 }
 
-
 .content {
 	display: flex;
 	align-items: center;
@@ -49,7 +48,7 @@ body {
 	height: 160px;
 	overflow: hidden;
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-	"Lucida Sans", Arial, sans-serif;;
+		"Lucida Sans", Arial, sans-serif;
 	font-size: 35px;
 	line-height: 40px;
 	color: #000000;
@@ -60,7 +59,6 @@ body {
 	height: 40px;
 	padding: 0 40px;
 }
-
 
 .content__container__text {
 	display: inline;
@@ -83,8 +81,6 @@ body {
 	line-height: 40px;
 	margin: 0;
 }
-
-
 
 @keyframes opacity {
 	0%,
@@ -232,12 +228,13 @@ nav ul li a {
 	align-items: center;
 	padding: 10px;
 	color: #000000;
+	
 	text-decoration: none;
 }
 nav ul li a:hover {
 	border-radius: 7px;
 	box-shadow: 2px 2px 3px black;
-	transition: 1s;
+	transition: 0.3s;
 }
 nav ul ul {
 	display: none;
@@ -256,7 +253,8 @@ nav ul ul li {
 nav ul ul li a {
 	padding: 10px 15px;
 	border-radius: 7px;
-	background-color:#98e4ff;
+	background-color: #98e4ff;
+	border: #000000 solid 2px;
 	margin: 10px;
 }
 .image {
@@ -304,7 +302,7 @@ h2 {
 .card {
 	display: flex;
 	flex-direction: column;
-	flex:  100%;
+	flex: 100%;
 	padding: 10px;
 	background: var(--white);
 	border-radius: 12px;
@@ -334,7 +332,7 @@ h2 {
 	max-width: 85%;
 	display: flex;
 	align-items: center;
-	justify-content:center ;
+	justify-content: center;
 }
 
 .card .card-link-wrapper {
@@ -401,4 +399,75 @@ h2 {
 	.card:not(:last-child) {
 		margin-right: 40px;
 	}
+}
+.footer {
+	height: 300px;
+	display: flex;
+	margin-top: 100px;
+	flex-direction: row;
+	align-items: start;
+	justify-content: space-around;
+}
+
+.footer-details {
+	width: 60%;
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+}
+
+.footer-img img {
+	display: inline-block;
+	position: relative;
+	right: 150px;
+}
+
+.footer-img .logo-name {
+	position: relative;
+	bottom: 40px;
+	left: -120px;
+	/* font-size: large; */
+}
+
+.footer-img .logo-name p {
+	font-weight: 700;
+}
+
+.footer-head {
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 0.4;
+}
+
+.footer-ele {
+	display: block;
+	text-decoration: none;
+	color: white;
+	opacity: 0.8;
+	line-height: 2;
+}
+
+.footer-ele:hover {
+	opacity: 1;
+	text-decoration: underline;
+}
+
+.footer-share a {
+	display: inline-flex;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: 40px;
+	font-size: 20px;
+	background-color: #0062ff;
+	border: 2px solid rgba(189, 198, 255, 1);
+	border-radius: 50%;
+	margin-right: 10px;
+	opacity: 0.5;
+}
+
+.footer-share a:hover {
+	background-color: #2323236c;
+	opacity: 1;
 }
