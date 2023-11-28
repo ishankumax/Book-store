@@ -248,7 +248,7 @@ nav ul ul li {
 nav ul ul li a {
 	padding: 10px 15px;
 	border-radius: 7px;
-	background-color: #3A8FB7;
+	background-color: #F76D57;
 	border: #161A30 solid 3.0px;
 	margin: 10px;
 }
@@ -301,7 +301,7 @@ h2 {
 	padding: 10px;
 	background: var(--white);
 	border-radius: 12px;
-	box-shadow: 0 5px 15px #161A30 rgba(0, 0, 0, 15%);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
 	scroll-snap-align: start;
 	transition: all 0.2s ease-in-out;
 }
@@ -340,8 +340,8 @@ h2 {
 	font-weight: 600;
 	color: #161A30;
 	background-color: #3A8FB7;
-	padding: 6px 12px;
-	border-radius: 8px;
+	padding: 6px 10px;
+	border-radius: 5px;
 	transition: background 0.2s;
 }
 
