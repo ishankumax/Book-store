@@ -6,20 +6,14 @@ body {
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
 	padding-top: 200px;
-	background: rgb(189, 198, 255);
-	background: linear-gradient(
-		45deg,
-		rgba(189, 198, 255, 1) 0%,
-		rgba(194, 218, 255, 1) 33%,
-		rgba(195, 239, 255, 1) 67%,
-		rgba(205, 255, 252, 1) 100%
-	);
+	background: #ECECEC ;
+	
 }
 .header {
 	width: 100%;
 	height: 150px;
-	background-color: #b6fffa;
-	color: black;
+	background-color: #F76D57;
+	color: #161A30;
 	position: fixed;
 	top: 0;
 	transition: top 0.4s;
@@ -198,8 +192,8 @@ body {
 .navbar {
 	width: 100%;
 	height: 60px;
-	background-color: #98e4ff; /* Navbar background color */
-	color: #000000;
+	background-color: #3A8FB7 ; /* Navbar background color */
+	color: #161A30;
 	position: fixed;
 	top: 150px; /* Displayed below the header initially */
 	transition: top 0.4s;
@@ -227,25 +221,26 @@ nav ul li a {
 	display: flex;
 	align-items: center;
 	padding: 10px;
-	color: #000000;
-	
+	color: #161A30;
+
 	text-decoration: none;
 }
 nav ul li a:hover {
 	border-radius: 7px;
-	box-shadow: 2px 2px 3px black;
+
+	box-shadow: 2px 2px 3px #161A30;
 	transition: 0.3s;
 }
 nav ul ul {
 	display: none;
 	position: absolute;
-	color: white;
+	color: #161A30;
 	min-width: 150px;
 	z-index: 1001;
 }
 nav ul li:hover > ul {
 	display: block;
-	color: white;
+	color: F6C90E;
 }
 nav ul ul li {
 	display: block;
@@ -253,8 +248,8 @@ nav ul ul li {
 nav ul ul li a {
 	padding: 10px 15px;
 	border-radius: 7px;
-	background-color: #98e4ff;
-	border: #000000 solid 2px;
+	background-color: #3A8FB7;
+	border: #161A30 solid 3.0px;
 	margin: 10px;
 }
 .image {
@@ -306,7 +301,7 @@ h2 {
 	padding: 10px;
 	background: var(--white);
 	border-radius: 12px;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+	box-shadow: 0 5px 15px #161A30 rgba(0, 0, 0, 15%);
 	scroll-snap-align: start;
 	transition: all 0.2s ease-in-out;
 }
@@ -316,8 +311,8 @@ h2 {
 }
 
 .card:hover {
-	color: white;
-	background: black;
+	color: #161A30;
+	background: #3A8FB7;
 	transform: scale(1.1);
 }
 
@@ -342,16 +337,17 @@ h2 {
 .card .card-link {
 	display: inline-block;
 	text-decoration: none;
-	color: rgb(255, 255, 255);
-	background: rgb(0, 0, 0);
+	font-weight: 600;
+	color: #161A30;
+	background-color: #3A8FB7;
 	padding: 6px 12px;
 	border-radius: 8px;
 	transition: background 0.2s;
 }
 
 .card:hover .card-link {
-	background: white;
-	color: #000000;
+	background: #F76D57;
+	color: #161A30;
 }
 
 .cards::-webkit-scrollbar {
@@ -442,7 +438,7 @@ h2 {
 .footer-ele {
 	display: block;
 	text-decoration: none;
-	color: white;
+	color: black;
 	opacity: 0.8;
 	line-height: 2;
 }
@@ -469,5 +465,5 @@ h2 {
 
 .footer-share a:hover {
 	background-color: #2323236c;
-	opacity: 1;
+	opacity: 100;
 }
