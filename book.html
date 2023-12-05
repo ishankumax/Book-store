@@ -98,9 +98,9 @@
 							</form>
 						</li>
 						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-						<button onclick="myFunction()">
-							<span class="material-symbols-outlined"> light_mode </span>
-						</button>
+						<li alt="mode"><span id="mode-icon" onclick="toggleMode()" class="fas fa-sun"></span></li>
+
+
 
 						<li>
 							<a href="book.html"
@@ -131,7 +131,7 @@
 							>
 						</li>
 						<li>
-							<a href="#"
+							<a href="contact.html"
 								><span class="material-symbols-outlined"> call </span>Contact</a
 							>
 						</li>
@@ -146,49 +146,44 @@
 					src="https://www.imgbly.com/ib/AaOtgVvtnF.png"
 					alt="HTML tutorial"
 					style="width: 70px; height: 70px" /><br />Box Sets</a
-			>
+			><br>
 			<a href=""
 				><img
 					src="https://www.imgbly.com/ib/t2FLdBHuib.png"
 					alt="HTML tutorial"
 					style="width: 70px; height: 70px" /><br />Fiction Book</a
-			>
+			><br>
 			<a href=""
 				><img
 					src="https://www.imgbly.com/ib/QDAA1r7wtP.png"
 					alt="HTML tutorial"
 					style="width: 70px; height: 70px" /><br />Internal Seller</a
-			>
+			><br>
 			<a href=""
 				><img
 					src="https://www.imgbly.com/ib/ACHSjdcGuY.png"
 					alt="HTML tutorial"
 					style="width: 70px; height: 70px" /><br />Award Wining</a
-			>
+			><br>
 			<a href=""
 				><img
 					src="https://www.imgbly.com/ib/A9IS3xySw8.png"
 					alt="HTML tutorial"
 					style="width: 70px; height: 70px" /><br />Tarot Cards</a
-			>
+			><br>
 			<a href=""
 				><img
 					src="https://www.imgbly.com/ib/nsYsN1Ur8k.png"
 					alt="HTML tutorial"
 					style="width: 70px; height: 70px" /><br />Today's Deal</a
-			>
-			<a href=""
-				><img
-					src="https://www.imgbly.com/ib/AaOtgVvtnF.png"
-					alt="HTML tutorial"
-					style="width: 70px; height: 70px" /><br />Book Set</a
-			>
+			><br>
+			
 			<a href=""
 				><img
 					src="https://www.imgbly.com/ib/WKONAymArN.png"
 					alt="HTML tutorial"
 					style="width: 70px; height: 70px" /><br />New Arrivals</a
-			>
+			><br>
 		</div>
 
 		<div class="container">
@@ -823,10 +818,35 @@
 							imgText.innerHTML = imgs.alt;
 							expandImg.parentElement.style.display = "block";
 						}
-						function myFunction() {
-							var element = document.body;
-							element.classList.toggle("dark-mode");
-						}
+						const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        // Function to set the mode based on user preference
+        function setMode() {
+            document.body.classList.toggle('dark-mode', prefersDarkMode);
+            updateIcon();
+        }
+
+        // Set the initial mode
+        setMode();
+
+        // Function to toggle the mode
+        function toggleMode() {
+            document.body.classList.toggle('dark-mode');
+            updateIcon();
+        }
+
+        // Function to update the icon based on the current mode
+        function updateIcon() {
+            const icon = document.getElementById('mode-icon');
+            if (document.body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            } else {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
+        }
+
 					</script>
 				</p>
 			</div>

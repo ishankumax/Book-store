@@ -6,18 +6,25 @@ body {
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
 	padding-top: 200px;
-	background: #ECECEC ;
-	
+	background: #f8f9fa;
+	color: #343a40;
 }
-.dark-mode {
-	background-color: black;
-	color: white;
-  }
+body.dark-mode {
+	background-color: #2e3339;
+	color: #d6d8d9;
+}
+
+#mode-icon {
+	cursor: pointer;
+	font-size: 24px;
+	margin: 10px;
+}
+
 .header {
 	width: 100%;
 	height: 150px;
-	background-color: #F76D57;
-	color: #161A30;
+	background-color: #f76d57;
+	color: #161a30;
 	position: fixed;
 	top: 0;
 	transition: top 0.4s;
@@ -196,14 +203,15 @@ body {
 .navbar {
 	width: 100%;
 	height: 60px;
-	background-color: #3A8FB7 ; /* Navbar background color */
-	color: #161A30;
+	background-color: #3a8fb7; /* Navbar background color */
+	color: #161a30;
 	position: fixed;
 	top: 150px; /* Displayed below the header initially */
 	transition: top 0.4s;
 	display: flex;
 	align-items: center;
 	justify-content: right;
+	z-index: 999;
 }
 .navbar-content {
 	margin: 5px;
@@ -225,20 +233,20 @@ nav ul li a {
 	display: flex;
 	align-items: center;
 	padding: 10px;
-	color: #161A30;
+	color: #161a30;
 
 	text-decoration: none;
 }
 nav ul li a:hover {
 	border-radius: 7px;
 
-	box-shadow: 2px 2px 3px #161A30;
+	box-shadow: 2px 2px 3px #161a30;
 	transition: 0.3s;
 }
 nav ul ul {
 	display: none;
 	position: absolute;
-	color: #161A30;
+	color: #161a30;
 	min-width: 150px;
 	z-index: 1001;
 }
@@ -252,13 +260,13 @@ nav ul ul li {
 nav ul ul li a {
 	padding: 10px 15px;
 	border-radius: 7px;
-	background-color: #F76D57;
-	border: #161A30 solid 3.0px;
+	background-color: #f76d57;
+	border: #161a30 solid 3px;
 	margin: 10px;
 }
 .image {
 	width: 1350px;
-	height: 80px;
+	height: 100px;
 	padding: 10px;
 	margin-left: 80px;
 	margin-bottom: 5px;
@@ -269,14 +277,23 @@ nav ul ul li a {
 }
 
 .image a {
+	padding: 5px;
 	text-decoration: none;
 	color: black;
 	transition: transform 0.2s ease-in-out;
 	border-radius: 7px;
+	background-color: #f8f9fa;
+	opacity: 50%;
+	box-shadow: 0 0 13px #f8f9fa;
+}
+
+.image a img {
+	opacity: 1;
 }
 
 .image a:hover {
 	transform: scale(1.1);
+	opacity: 100%;
 }
 
 .container {
@@ -315,8 +332,8 @@ h2 {
 }
 
 .card:hover {
-	color: #161A30;
-	background: #3A8FB7;
+	color: #161a30;
+	background: #3a8fb7;
 	transform: scale(1.1);
 }
 
@@ -342,16 +359,16 @@ h2 {
 	display: inline-block;
 	text-decoration: none;
 	font-weight: 600;
-	color: #161A30;
-	background-color: #3A8FB7;
+	color: #161a30;
+	background-color: #3a8fb7;
 	padding: 6px 10px;
 	border-radius: 5px;
 	transition: background 0.2s;
 }
 
 .card:hover .card-link {
-	background: #F76D57;
-	color: #161A30;
+	background: #f76d57;
+	color: #161a30;
 }
 
 .cards::-webkit-scrollbar {
