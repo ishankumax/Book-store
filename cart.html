@@ -1,151 +1,201 @@
 <!-- Cart Page (cart.html) -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="cart.css">
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-        }
+		<title>Shopping Cart</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="https://www.imgbly.com/ib/toTY2LN1jV.jpg"
+			style="border-radius: 50%" />
+			<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	</head>
+	<body>
+		<div class="header" id="header">
+			<div class="header-content">
+				<div class="content">
+					<img
+						src="https://www.imgbly.com/ib/toTY2LN1jV.jpg"
+						height="100px"
+						width="100px"
+						style="vertical-align: middle; border-radius: 15%" />
+					<div class="content__container">
+						<p class="content__container__text">MonSan</p>
 
-        #cart {
-            height: 1000px;
-            width: 80%;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+						<ul class="content__container__list">
+							<li class="content__container__list__item">Books 📚</li>
+							<li class="content__container__list__item">Cards 🎴</li>
+							<li class="content__container__list__item">Blogs 👨‍💻</li>
+							<li class="content__container__list__item">Articles 📄</li>
+						</ul>
+					</div>
+				</div>
+				<div class="share-buttons">
+					<a
+						href="https://www.facebook.com/profile.php?id=61551090667008&mibextid=ZbWKwL"
+						class="facebook"
+						><img
+							src="https://img.icons8.com/plasticine/100/facebook-new.png"
+							alt="Facebook"
+					/></a>
+					<a href="" class="youtube"
+						><img
+							src="https://img.icons8.com/plasticine/100/youtube-play--v1.png"
+							alt="youtube-play--v2"
+							alt="youtube"
+					/></a>
+					<a href="https://x.com/ishan_kumar10?s=08" class="twitter"
+						><img
+							src="https://img.icons8.com/plasticine/100/twitter.png"
+							alt="Twitter"
+					/></a>
+					<a
+						href="https://instagram.com/ishan.kumarofficial?igshid=OGQ5ZDc2ODk2ZA=="
+						class="insta"
+						><img
+							src="https://img.icons8.com/plasticine/100/instagram-new--v1.png"
+							alt="instagram-new--v1"
+							alt="insta"
+					/></a>
+					<a
+						href="https://www.linkedin.com/in/ishan-kumar-0b34b5279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+						class="linkin"
+						><img
+							src="https://img.icons8.com/plasticine/100/linkedin.png"
+							alt="LinkedIn"
+					/></a>
+					<a href="https://pin.it/2Y3Sodh" class="pins"
+						><img
+							src="https://img.icons8.com/plasticine/100/pinterest--v1.png"
+							alt="pins"
+					/></a>
+				</div>
+			</div>
+		</div>
+		<div class="navbar" id="navbar">
+			<div class="navbar-content">
+				<nav>
+					<ul>
+						<li>
+							<form action="https://www.google.com/search" method="get">
+								<input type="text" name="q" placeholder="Search Books..." />
+							</form>
+						</li>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+						<li alt="mode"><span id="mode-icon" onclick="toggleMode()" class="fas fa-sun"></span></li>
 
-        #cart table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
 
-        #cart table, #cart th, #cart td {
-            border: 1px solid #ddd;
-        }
 
-        #cart th, #cart td {
-            padding: 12px;
-            text-align: left;
-        }
+						<li>
+							<a href="book.html"
+								><span class="material-symbols-outlined"> home </span>Home</a
+							>
+						</li>
+						<li>
+							<a href="#"
+								><span class="material-symbols-outlined"> build </span
+								>Services</a
+							>
+							<ul>
+								<li><a href="#">Cards</a></li>
+								<li><a href="#">Blogs</a></li>
+								<li><a href="#">Article</a></li>
+							</ul>
+						</li>
 
-        #cart th {
-            background-color: #333;
-            color: #fff;
-        }
+						<li>
+							<a href="#"
+								><span class="material-symbols-outlined"> person </span>Login</a
+							>
+						</li>
+						<li>
+							<a href="cart.html"
+								><span class="material-symbols-outlined"> shopping_cart </span
+								>Cart</a
+							>
+						</li>
+						<li>
+							<a href="home.html"
+								><span class="material-symbols-outlined"> call </span>Contact</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<br />
+<br><br><br><br><br><br><br><br><br><br><br>
+		<div id="cart">
+			<h2>Your Cart</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Product</th>
+						<th>Name</th>
+						<th>Price</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody id="cart-items">
+					<!-- Cart items will be dynamically added here -->
+				</tbody>
+			</table>
+			<div id="total-amount">Total: $0.00</div>
+			<button onclick="checkout()">Checkout</button>
+		</div>
 
-        #cart img {
-            max-width: 50px;
-            max-height: 50px;
-            margin-right: 10px;
-        }
+		<script>
+			// Function to display cart items on the cart page
+			function displayCart() {
+				const cart = JSON.parse(localStorage.getItem("cart")) || [];
+				const cartItemsElement = document.getElementById("cart-items");
+				const totalAmountElement = document.getElementById("total-amount");
 
-        #cart button {
-            background-color: #4caf50;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
+				// Clear previous cart items
+				cartItemsElement.innerHTML = "";
 
-        #cart button:hover {
-            background-color: #45a049;
-        }
-
-        #total-amount {
-            font-size: 18px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>Shopping Cart</h1>
-    </header>
-
-    <div id="cart">
-        <h2>Your Cart</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Product</th>
-                    <th>Name</th>
-                    <th>Price</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody id="cart-items">
-                <!-- Cart items will be dynamically added here -->
-            </tbody>
-        </table>
-        <div id="total-amount">Total: $0.00</div>
-        <button onclick="checkout()">Checkout</button>
-    </div>
-
-    <script>
-        // Function to display cart items on the cart page
-        function displayCart() {
-            const cart = JSON.parse(localStorage.getItem('cart')) || [];
-            const cartItemsElement = document.getElementById('cart-items');
-            const totalAmountElement = document.getElementById('total-amount');
-
-            // Clear previous cart items
-            cartItemsElement.innerHTML = '';
-
-            // Populate the cart table with the items
-            let totalAmount = 0;
-            cart.forEach(item => {
-                totalAmount += item.price;
-                const row = document.createElement('tr');
-                row.innerHTML = `
+				// Populate the cart table with the items
+				let totalAmount = 0;
+				cart.forEach((item) => {
+					totalAmount += item.price;
+					const row = document.createElement("tr");
+					row.innerHTML = `
                     <td><img src="placeholder-image.jpg" alt="Product Image"></td>
                     <td>${item.name}</td>
                     <td>${item.price.toFixed(2)}</td>
-                    <td><button onclick="removeFromCart('${item.name}')">Remove</button></td>
+                    <td><button onclick="removeFromCart('${
+											item.name
+										}')">Remove</button></td>
                 `;
-                cartItemsElement.appendChild(row);
-            });
+					cartItemsElement.appendChild(row);
+				});
 
-            // Update the total amount
-            totalAmountElement.textContent = `Total: $${totalAmount.toFixed(2)}`;
-        }
+				// Update the total amount
+				totalAmountElement.textContent = `Total: $${totalAmount.toFixed(2)}`;
+			}
 
-        // Function to remove a product from the cart
-        function removeFromCart(name) {
-            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+			// Function to remove a product from the cart
+			function removeFromCart(name) {
+				let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-            // Remove the item from the cart based on its name
-            cart = cart.filter(item => item.name !== name);
+				// Remove the item from the cart based on its name
+				cart = cart.filter((item) => item.name !== name);
 
-            // Update the cart data in localStorage
-            localStorage.setItem('cart', JSON.stringify(cart));
+				// Update the cart data in localStorage
+				localStorage.setItem("cart", JSON.stringify(cart));
 
-            // Redisplay the updated cart
-            displayCart();
-        }
+				// Redisplay the updated cart
+				displayCart();
+			}
 
-        // Initial display of the cart on page load
-        displayCart();
-    </script>
-
-</body>
+			// Initial display of the cart on page load
+			displayCart();
+		</script>
+	</body>
 </html>
