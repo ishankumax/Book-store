@@ -19,7 +19,11 @@
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
 }
-
+#mode-icon {
+	cursor: pointer;
+	font-size: 24px;
+	margin: 10px;
+}
 .content {
 	display: flex;
 	align-items: center;
@@ -282,8 +286,8 @@ nav ul ul li a {
 }
 
 #cart button {
-    background-color: #4caf50;
-    color: #fff;
+    background-color: #f76d57;
+    color: #161a30;
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -291,7 +295,7 @@ nav ul ul li a {
 }
 
 #cart button:hover {
-    background-color: #45a049;
+    background-color: #f65a42;
 }
 
 #total-amount {
