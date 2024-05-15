@@ -362,4 +362,10 @@ nav ul ul li a {
 	border-radius: 50%;
 	margin-right: 10px;
 	opacity: 0.5;
-}
+
+
+.footer-share a:hover {
+	background-color: #2323236c;
+	opacity: 100;
+  }
+
