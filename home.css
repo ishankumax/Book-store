@@ -297,3 +297,74 @@ nav ul ul li a {
 #products button:hover {
     background-color: #f65a42;
 }
+.footer {
+	height: 300px;
+	display: flex;
+	margin-top: 100px;
+	flex-direction: row;
+	align-items: start;
+	justify-content: space-around;
+}
+
+.footer-details {
+	width: 60%;
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+}
+
+.footer-img img {
+	display: inline-block;
+	position: relative;
+	right: 150px;
+}
+
+.footer-img .logo-name {
+	position: relative;
+	bottom: 40px;
+	left: -120px;
+	/* font-size: large; */
+}
+
+.footer-img .logo-name p {
+	font-weight: 700;
+}
+
+.footer-head {
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 0.4;
+}
+
+.footer-ele {
+	display: block;
+	text-decoration: none;
+	color: black;
+	opacity: 0.8;
+	line-height: 2;
+}
+
+.footer-ele:hover {
+	opacity: 1;
+	text-decoration: underline;
+}
+
+.footer-share a {
+	display: inline-flex;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: 40px;
+	font-size: 20px;
+	background-color: #0062ff;
+	border: 2px solid rgba(189, 198, 255, 1);
+	border-radius: 50%;
+	margin-right: 10px;
+	opacity: 0.5;
+}
+
+.footer-share a:hover {
+	background-color: #2323236c;
+	opacity: 100;
+}
