@@ -27,6 +27,6 @@ We welcome contributions from the community! If you'd like to contribute, please
 
 If you have any questions, suggestions, or feedback, please contact the project owners:
 
-- Ishan Kumar: [Email](mailto:ishan@example.com)
+- Ishan Kumar: [Email](mailto:ishankumax@gmail.com)
 - Inderjeet Anand: [Email](mailto:inderjeet@example.com)
 - Janvi: [Email](mailto:janvi@example.com)
