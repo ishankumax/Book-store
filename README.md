@@ -14,21 +14,6 @@ Monsan Bookstore is designed to offer users a rich and engaging experience while
 - **Blog Pages**: Access a variety of insightful blogs and articles from experts and contributors.
 - **User-Friendly Navigation**: Smooth and intuitive user journey across the platform.
 
-## 🗓️ Feature Timeline
-
-Below is the planned timeline for upcoming features and improvements:
-
-- **May 2024**:
-  - Introduce user profiles with personalized recommendations.
-- **May 2025**:
-  - Launch a rating and review system for books and blogs.
-- **May 2026**:
-  - Open community forums for discussions on self-help and spirituality.
-- **May 2027**:
-  - Implement e-book purchases and downloads.
-- **May 2028**:
-  - Integrate multi-language support for global accessibility.
-
 ## 👥 Project Owners
 
 - **Primary Owner**: Ishan Kumar
